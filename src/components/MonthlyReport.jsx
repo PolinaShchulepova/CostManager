@@ -67,9 +67,6 @@ const MonthlyReport = ({ entries }) => {
 
   return (
     <div>
-      <Typography variant="h5" style={{ marginBottom: '20px' }}>
-        Monthly Report
-      </Typography>
       {/* Filter controls for selecting year and month */}
       <div style={{ display: 'flex', gap: '10px', marginBottom: '20px' }}>
         <input
