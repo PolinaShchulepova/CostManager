@@ -1,176 +1,173 @@
 /* General - Theme Definition */
 :root {
-    --background-light: #F9F7F0;
-    --text-light: #333;
-    --container-bg-light: #FFE5D6; /* Light peach background color for cards */
-    --header-light: #D8BFAA;
-    --table-header-light: #D8BFAA;
-    --table-row-hover-light: #F9B7D4;
+  --background-light: #f9f7f0;
+  --text-light: #333;
+  --container-bg-light: #ffe5d6; /* Light peach background color for cards */
+  --header-light: #d8bfaa;
+  --table-header-light: #d8bfaa;
+  --table-row-hover-light: #f9b7d4;
 
-    /* Dark theme color scheme */
-    --background-dark: #2A2A2A; /* Dark background */
-    --text-dark: #F5F5F5;
-    --container-bg-dark: #4A4A4A; /* Dark background color for cards */
-    --header-dark: #B89D6D; /* Beige dark brown header color */
-    --button-dark: #E3B79B;
-    --button-hover-dark: #F9B7D4;
-    --table-header-dark: #B89D6D;
-    --table-row-hover-dark: #F9B7D4;
+  /* Dark theme color scheme */
+  --background-dark: #2a2a2a; /* Dark background */
+  --text-dark: #f5f5f5;
+  --container-bg-dark: #4a4a4a; /* Dark background color for cards */
+  --header-dark: #b89d6d; /* Beige dark brown header color */
+  --button-dark: #e3b79b;
+  --button-hover-dark: #f9b7d4;
+  --table-header-dark: #b89d6d;
+  --table-row-hover-dark: #f9b7d4;
 }
 
 /* Apply styling for dark theme */
 [data-theme='dark'] {
-    --background: var(--background-dark);
-    --text-color: var(--text-dark);
-    --container-bg: var(--container-bg-dark);
-    --header-color: var(--header-dark);
-    --button-bg: var(--button-dark);
-    --button-bg-hover: var(--button-hover-dark);
-    --table-header-bg: var(--table-header-dark);
-    --table-row-hover-bg: var(--table-row-hover-dark);
+  --background: var(--background-dark);
+  --text-color: var(--text-dark);
+  --container-bg: var(--container-bg-dark);
+  --header-color: var(--header-dark);
+  --button-bg: var(--button-dark);
+  --button-bg-hover: var(--button-hover-dark);
+  --table-header-bg: var(--table-header-dark);
+  --table-row-hover-bg: var(--table-row-hover-dark);
 }
 
 /* Apply styling for light theme */
 [data-theme='light'] {
-    --background: var(--background-light);
-    --text-color: var(--text-light);
-    --container-bg: var(--container-bg-light);
-    --header-color: var(--header-light);
-    --table-header-bg: var(--table-header-light);
-    --table-row-hover-bg: var(--table-row-hover-light);
+  --background: var(--background-light);
+  --text-color: var(--text-light);
+  --container-bg: var(--container-bg-light);
+  --header-color: var(--header-light);
+  --table-header-bg: var(--table-header-light);
+  --table-row-hover-bg: var(--table-row-hover-light);
 }
 
 /* Basic styling */
 body {
-    background-color: var(--background);
-    color: var(--text-color);
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Card styling */
 .card {
-    background: var(--container-bg);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 750px;
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  background: var(--container-bg);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 750px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 /* Table styling */
 .table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 .table th,
 .table td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #000000;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #000000;
 }
 
 .table th {
-    background-color: var(--table-header-bg);
-    color: white;
+  background-color: var(--table-header-bg);
+  color: white;
 }
 
-
-
 .table tbody tr:hover {
-    background-color: var(--table-row-hover-bg);
+  background-color: var(--table-row-hover-bg);
 }
 
 /* Button styling */
 .btn-primary {
-    background-color: var(--button-bg);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.3s ease;
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: var(--button-bg-hover);
+  background-color: var(--button-bg-hover);
 }
 
 /* Form styling */
 form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-    flex-direction: column;
-    margin: 15px;
-    text-align: left;
-    border: 2px solid #ebf5f8; /* Adds a border around the form */
-    border-radius: 12px;
-    padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px;
+  text-align: left;
+  border: 2px solid #ebf5f8; /* Adds a border around the form */
+  border-radius: 12px;
+  padding: 8px;
 }
 
 form input,
 form select,
 form button {
-    padding: 8px;
-    border-radius: 4px;
-    width: 100%; /* Full-width fields */
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%; /* Full-width fields */
 }
 
 /* Toggle button for light/dark mode */
 .theme-toggle {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 17px;
-    background: transparent;
-    border: none;
-    color: var(--text-color);
-    padding: 8px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  padding: 8px;
 }
 
 /* Filter container styling */
 .filter-container {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    background: var(--background);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: var(--background);
 }
 
 /* Container settings */
 .container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
 }
 
 /* Styling for AddIncomeForm - Align fields in a row */
 .add-income-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
 }
 
 .add-income-form input,
 .add-income-form select,
 .add-income-form button {
-    padding: 8px;
-    border-radius: 4px;
-    flex: 1; /* Allows fields to take up full space */
-    min-width: 150px; /* Ensures a minimum width for fields */
+  padding: 8px;
+  border-radius: 4px;
+  flex: 1; /* Allows fields to take up full space */
+  min-width: 150px; /* Ensures a minimum width for fields */
 }
-
