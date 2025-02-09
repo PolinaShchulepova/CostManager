@@ -1,11 +1,22 @@
-# React + Vite
+# Cost Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## **Description**
+The Cost Manager App is a personal finance management tool designed to help users track their expenses and incomes, filter data by month, year, and category, and visualize their spending through reports and charts. The app is built using modern web technologies and provides an intuitive interface for managing finances.
 
-Currently, two official plugins are available:
+## **Submitted By**
+- Nicole Davidov
+-  Polina Shchulepova
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-  "# CostManager"
-  "# CostManager"
-  "# CostManager"
+## **Project Objective**
+The objective of this project is to provide users with an effective way to:
+- Track their expenses and incomes.
+- View detailed monthly reports.
+- Visualize spending trends with interactive pie charts.
+- Organize financial data for better decision-making.
+
+## **Use Cases**
+- **Add Expense/Income**: Users can record their financial activities with details like amount, category, and date.
+- **Filter Data**: Users can filter their records by specific months, years, and categories to narrow down their analysis.
+- **Monthly Report**: The app generates a comprehensive report showing the total expenses, incomes, and net income for the selected period.
+- **Data Visualization**: Expenses by category are displayed in an easy-to-understand pie chart.
+
