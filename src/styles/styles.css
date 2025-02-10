@@ -56,7 +56,7 @@ body {
   background: var(--container-bg);
   padding: 20px;
   margin: 20px auto;
-  max-width: 750px;
+  max-width: 830px;
   border-radius: 8px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -170,4 +170,33 @@ form button {
   border-radius: 4px;
   flex: 1; /* Allows fields to take up full space */
   min-width: 150px; /* Ensures a minimum width for fields */
+}
+
+
+/* Table Container Styling */
+.tableContainer {
+  padding: 15px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.editableTable th,
+.editableTable td {
+  padding: 5px;
+  text-align: center;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+/* Buttons inside Editable Table */
+.editButton, .deleteButton, .saveButton {
+  padding: 3px 6px;
+  font-size: 12px;
+  margin: 3px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
 }

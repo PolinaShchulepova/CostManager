@@ -43,7 +43,7 @@ const EditableTable = ({ data, columns, onDelete, onUpdate }) => {
   );
 
   return (
-    <Table>
+    <Table className="editableTable">
       <TableHead>
         <TableRow>
           {columns.map((col) => (

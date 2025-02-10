@@ -41,7 +41,7 @@ const IncomeTable = ({ incomes, onDelete, onUpdate }) => {
   );
 
   return (
-    <div className="formDiv">
+    <div className="tableContainer">
       <h2>Income List</h2>
       {/* Pass the sorted data and columns to the EditableTable component */}
       <EditableTable

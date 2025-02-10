@@ -28,7 +28,7 @@ const ExpensesTable = ({ entries, onDelete, onUpdate }) => {
   );
 
   return (
-    <div className="formDiv">
+    <div className="tableContainer">
       <h2>Expenses List</h2>
 
       {/* EditableTable component displays the expenses in a table format */}
